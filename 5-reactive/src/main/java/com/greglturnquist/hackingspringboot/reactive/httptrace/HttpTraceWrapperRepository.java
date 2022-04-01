@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.greglturnquist.hackingspringboot.reactive;
+package com.greglturnquist.hackingspringboot.reactive.httptrace;
 
 import org.springframework.data.repository.Repository;
 

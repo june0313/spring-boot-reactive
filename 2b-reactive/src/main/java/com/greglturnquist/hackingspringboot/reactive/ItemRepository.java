@@ -48,4 +48,7 @@ public interface ItemRepository extends ReactiveCrudRepository<Item, String>, Re
 	// search by name OR description
 	Flux<Item> findByNameContainingOrDescriptionContainingAllIgnoreCase(String partialName, String partialDesc);
 	// end::code-3[]
+
+	@Query("{ 'name' : ?0 , 'age' : ?1 }")
+	Flux<Item> customQuery(String name, int age);
 }

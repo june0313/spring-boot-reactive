@@ -1,5 +1,8 @@
 package com.greglturnquist.hackingspringboot.reactive;
 
+import com.greglturnquist.hackingspringboot.reactive.httptrace.HttpTraceWrapper;
+import com.greglturnquist.hackingspringboot.reactive.httptrace.HttpTraceWrapperRepository;
+import com.greglturnquist.hackingspringboot.reactive.httptrace.SpringDataHttpTraceRepository;
 import org.bson.Document;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.actuate.trace.http.HttpTrace;

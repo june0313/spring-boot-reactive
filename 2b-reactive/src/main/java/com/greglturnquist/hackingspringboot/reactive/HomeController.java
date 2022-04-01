@@ -104,7 +104,7 @@ public class HomeController {
 			@RequestParam boolean useAnd) {
 		return Mono.just(Rendering.view("home.html") // <3>
 				.modelAttribute("items", //
-						inventoryService.searchByExample(name, description, useAnd)) // <4>
+						inventoryService.searchByFluentExample(name, description)) // <4>
 				.modelAttribute("cart", //
 						this.cartRepository.findById("My Cart")
 								.defaultIfEmpty(new Cart("My Cart")))
